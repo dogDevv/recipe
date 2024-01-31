@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: hsl(30, 18%, 87%);
+}
+
+#white-card {
+    position: relative;
+    width: 50vh;
+    height: 100vh;
+    background-color: white;
+    display: grid;
+    border-radius: 20px;
+    margin: 30px auto;
+}
+
+.omelette-photo {
+    position: absolute;
+    top: 13%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 90%;
+    border-radius: 20px;
+}
+
+#header {
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 1;
+    background-color: white;
+    font-size: 35px;
+    width: 70%;
+    font-family: Outfit;
+    font-weight: 600;
+}
+
+.intro {
+    position: absolute;
+    top: 30%;
+    font-size: 16px;
+    width: 90%;
+    left: 5%;
+    background-color: white;
+    font-family: Outfit;
+    font-weight: 400;
+}
+
+.prep-time-card {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* Set a higher z-index to place it on top of the white-card */
+    width: 90%; /* Adjust the width as needed */
+    height: 13%;
+    padding: 20px; /* Add padding to make it visually appealing */
+    background-color: hsl(330, 100%, 98%); /* Set a background color for the additional card */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth -remove4final?  */
+}
+
+.prep-time-card h2 {
+    font-size: 24px;
+}
+
+.prep-time-card ul {
+    list-style: square;
+    list-style-position: inside;
+    font-size: 16px;
+    line-height: 2;
+    color: hsl(30, 10%, 34%);
+    font-family: Outfit;
+    margin-left: 10px;
+}
+
