@@ -6,129 +6,157 @@
 
 body {
     background-color: hsl(30, 18%, 87%);
+    font-size: 16px;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Horizontally center the white card */
+    align-items: center; /* Vertically center the white card */
 }
 
 #white-card {
-    position: relative;
-    width: 50vh;
-    height: 100vh;
+    width: 700px;
     background-color: white;
-    display: grid;
-    border-radius: 20px;
-    margin: 30px auto;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
+    align-items: center; /* Center child elements horizontally */
+}
+
+.container {
+    width: 90%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
+    align-items: flex-start; /* Center child elements horizontally */
+    height: 100%;
 }
 
 .omelette-photo {
-    position: absolute;
-    top: 13%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    width: 90%;
+    max-width: 100%;
     border-radius: 20px;
+    margin-top: 40px;
 }
 
+
 #header {
-    position: absolute;
-    top: 25%;
-    left: 38%;
-    transform: translateX(-50%);
-    text-align: center;
-    z-index: 1;
-    background-color: white;
-    font-size: 40px;
-    width: 70%;
-    font-family: Outfit;
-    font-weight: 600;
+    font-size: 39px;
+    font-family: Young Serif;
+    margin-top: 20px; 
+    font-weight: 400;
 }
 
 .intro {
-    position: absolute;
-    top: 30%;
-    font-size: 14px;
-    left: 5%;
-    width: 90%;
-    background-color: white;
-    font-family: Outfit;
-    font-weight: 400;
-    line-height: 1.5;
+  font-family: Outfit;
+  font-weight: 400;
+  margin-top: 5px;
 }
 
+
 .prep-time-card {
-    position: absolute;
-    top: 43%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2; /* Set a higher z-index to place it on top of the white-card */
-    width: 90%; /* Adjust the width as needed */
-    height: 13%;
-    padding: 20px; /* Add padding to make it visually appealing */
-    background-color: hsl(330, 100%, 98%); /* Set a background color for the additional card */
-    border-radius: 10px; /* Add border-radius for rounded corners */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth -remove4final?  */
+  width: 100%;
+  padding: 20px;
+  background-color: hsl(330, 100%, 98%);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /*not needed in final version */
+  margin-top: 20px; 
 }
 
 .prep-time-card h2 {
-    font-size: 24px;
-    color:  hsl(30, 10%, 34%);
-    margin-bottom: 10px;
+  font-size: 20px;
+  color: hsl(30, 10%, 34%);
+  margin-bottom: 10px;
 }
 
 .prep-time-card ul {
-    list-style: disc;
-    font-size: 16px;
-    line-height: 2;
-    color: hsl(14, 45%, 36%);
-    font-family: Outfit;
-    margin-left: 30px;
+  list-style: disc;
+  font-size: 16px;
+  color: hsl(14, 45%, 36%);
+  font-family: Outfit;
+  margin-left: 30px;
 }
 
 .prep-time-card li {
-    padding-left: 20px; /* Add padding to the left of the li text */
+  padding-left: 10px;
 }
 
-#white-card h3 {
-    font-size: 30px;
-    position: absolute;
-}
-
-#white-card h3 {
-    font-size: 30px;
-    position: absolute;
-    top: 52%;
-    left: 5%;
-    color: hsl(14, 45%, 36%);
-    font-family: Young Serif;
-    font-weight: 400;
+h3 {
+  font-size: 30px;
+  font-family: Young Serif;
+  font-weight: 400;
+  color: hsl(14, 45%, 36%);
+  margin-top: 15px;
 }
 
 .ingredients-list {
-    position: absolute;
-    color: hsl(14, 45%, 36%);
-    list-style: square;
-    top: 63%;
-    left: 53%;
-    transform: translate(-50%, -50%);
-    width: 90%; /* Adjust the width as needed */
-    height: 13%;
-    line-height: 1.8;
-    border-radius: 10px; /* Add border-radius for rounded corners */
+  color: hsl(14, 45%, 36%);
+  list-style: square;
+  margin-left: 20px;
+  margin-top: 10px;
+  font-family: Outfit;
+  margin-left: 30px;
 }
 
 .ingredients-list li {
-    padding-left: 20px;
-    font-size: 16px;
-    font-family: Outfit;
-    font-weight: 400;
+  padding-left: 12px;
 }
 
-.horizontal-line {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* z-index: 2; Set a higher z-index to place it on top of the white-card */
-    width: 91%; /* Adjust the width as needed */
-    background-color: hsl(14, 45%, 36%); /* Set a background color for the additional card */
-    opacity: .3;
+.bottom-line {
+  margin-top: 10px;
+  width: 100%;
+  background-color: hsl(14, 45%, 36%); /* Set a background color for the additional card */
+  opacity: .3;
+  /* z-index: 2; Set a higher z-index to place it on top of the white-card */
 }
+
+h4 {
+  font-size: 30px;
+  font-family: Young Serif;
+  font-weight: 400;
+  color: hsl(14, 45%, 36%);
+  margin-top: 15px;
+}
+
+ .instructions-list {
+  font-size: 16px;
+  color: hsl(14, 45%, 36%);
+  font-family: Outfit;
+  margin-left: 30px;
+}
+
+
+.instructions-list li {
+  padding-left: 10px;
+}
+
+h5 {
+  font-size: 30px;
+  font-family: Young Serif;
+  font-weight: 400;
+  color: hsl(14, 45%, 36%);
+  margin-top: 15px;
+}
+
+.nutrition-intro {
+  font-size: 16px;
+  color: hsl(14, 45%, 36%);
+  font-family: Outfit;
+  margin-top: 15px;
+}
+
+.nutrition-list {
+  font-size: 16px;
+  color: hsl(14, 45%, 36%);
+  font-family: Outfit;
+  list-style: none;
+}
+
+.nutrition-label-box {
+  display: flex;
+  gap: 300px;
+  font-size: 16px;
+  color: hsl(14, 45%, 36%);
+  font-family: Outfit;
+  list-style: none;
+  margin-top: 10px;
+}
+
